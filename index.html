@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="js/firebase.js"></script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>Id: </td>
+            <td><input type="text" name="id" id="usuario_id" /></td>
+        </tr>
+        <tr>
+            <td>Usuário Nome: </td>
+            <td><input type="text" name="usuario_nome" id="usuario_nome" /></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="button" value="Salvar" onclick="salvar_usuario();" />
+                <input type="button" value="Atualizar" onclick="atualizar_usuario();" />
+                <input type="button" value="Deletar" onclick="deletar_usuario();" />
+            </td>
+        </tr>
+    </table>
+
+    <h3>Lista de Usuários</h3>
+    <table id="tabela_usuarios">
+        <tr>
+            <td>#ID</td>
+            <td>Nome</td>
+        </tr>
+    </table>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
