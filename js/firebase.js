@@ -7,4 +7,6 @@ var config = {
     messagingSenderId: "144186283636",
     appId: "1:144186283636:web:165b58b28c7fcc3b9f6321",
     measurementId: "G-JPMBDLNQDB"
-};
+}
+
+firebase.initializeApp(config);
